@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Completed Tasks History</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body class="history-page">
+    <h1>Completed Tasks</h1>
+
+    <nav>
+      <a href="/">Active Tasks</a> | <a href="/history">View History</a> |
+      <a href="/stats">View Stats</a>
+    </nav>
+
+    <ul class="history-list">
+      <% if(completedTasks.length === 0) { %>
+      <li>No completed tasks yet.</li>
+      <% } else { %> <% completedTasks.forEach(task => { %>
+      <li>
+        <strong><%= task.title %></strong><br />
+        Completed on: <%= new Date(task.completedAt).toLocaleString() %>
+      </li>
+      <% }) %> <% } %>
+    </ul>
+
+    <a href="/">Back to Active Tasks</a>
+  </body>
+</html>

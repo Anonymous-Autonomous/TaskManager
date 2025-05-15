@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 30px;
+  background: #820f0f;
+  color: #333;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+nav a {
+  margin-right: 15px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+li {
+  background: white;
+  margin-bottom: 10px;
+  padding: 12px 15px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: inline;
+}
+
+input[type="text"] {
+  padding: 8px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #28a745;
+  border: none;
+  color: white;
+  padding: 7px 14px;
+  margin-left: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+/* Buttons for complete and delete */
+.complete-btn {
+  background-color: #007bff;
+}
+
+.complete-btn:hover {
+  background-color: #0056b3;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+}
+
+.delete-btn:hover {
+  background-color: #a71d2a;
+}
+
+/* Task actions container */
+.task-actions a,
+.task-actions form button {
+  margin-left: 10px;
+  font-size: 0.9em;
+}
+
+/* Strike-through style for completed tasks (if needed) */
+.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+/* ======================
+   PAGE SPECIFIC STYLES
+   ====================== */
+
+/* Home (index) */
+body.index-page {
+  background: #e0f7fa;
+}
+
+/* Edit page */
+body {
+  max-width: 600px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 25px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+body.edit-page input[type="text"] {
+  width: 100%;
+  font-size: 1.1em;
+}
+
+/* History page */
+body.history-page {
+  background: #fff3e0;
+}
+
+.history-list li {
+  flex-direction: column;
+  text-align: left;
+  font-size: 1em;
+  color: #555;
+}
+
+/* Stats page */
+body.stats-page {
+  background: #e8f5e9;
+}
+
+.stats-page p {
+  font-size: 1.2em;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+/* Links at bottom */
+a {
+  display: inline-block;
+  margin-top: 20px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

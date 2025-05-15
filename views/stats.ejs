@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Task Stats</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body class="stats-page">
+    <h1>Task Manager Stats</h1>
+
+    <nav>
+      <a href="/">Active Tasks</a> | <a href="/history">View History</a> |
+      <a href="/stats">View Stats</a>
+    </nav>
+
+    <p>Total Tasks: <%= totalTasks %></p>
+    <p>Active Tasks: <%= activeCount %></p>
+    <p>Completed Tasks: <%= completedCount %></p>
+
+    <a href="/">Back to Active Tasks</a>
+  </body>
+</html>
