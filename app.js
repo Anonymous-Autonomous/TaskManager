@@ -88,7 +88,10 @@ app.post("/delete/:id", (req, res) => {
   writeJSON(tasksFile, tasks);
   res.redirect("/");
 });
-
+app.post("/clear-history", (req, res) => {
+  fs.writeFileSync("completedTasks.json", JSON.stringify([])); // clear file
+  res.redirect("/history");
+});
 // View completed tasks (history)
 app.get("/history", (req, res) => {
   const completedTasks = readJSON(completedFile);
